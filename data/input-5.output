@@ -1,0 +1,25 @@
+*** begin compilation
+*** Push a new environment
+*** Put succ => (n:integer) -> integer into STACK(0) environment
+*** Push a new environment
+*** Put n => integer into STACK(1) environment
+*** Get n from STACK(1) environment <= integer
+*** Pop an environment
+MOVE [target=MEM [exp=fr.ubordeaux.deptinfo.compilation.lea.intermediate.NAME@78691363], source=BINOP [binop=+, left=MEM [exp=fr.ubordeaux.deptinfo.compilation.lea.intermediate.NAME@41d477ed], right=CONST [value=1]]]
+*** Put test_print => (str:string) -> float into STACK(0) environment
+*** Push a new environment
+*** Put str => string into STACK(1) environment
+*** Get str from STACK(1) environment <= string
+*** Pop an environment
+SEQ [left=EXPSTM [exp=fr.ubordeaux.deptinfo.compilation.lea.intermediate.CALL@682b2fa], right=MOVE [target=MEM [exp=fr.ubordeaux.deptinfo.compilation.lea.intermediate.NAME@217ed35e], source=CONST [value=0]]]
+*** Put main => (args:list<string>) -> void into STACK(0) environment
+*** Push a new environment
+*** Put args => list<string> into STACK(1) environment
+*** Put i => integer into STACK(1) environment
+*** Put j => float into STACK(1) environment
+*** Put bool1 => boolean into STACK(1) environment
+*** Put bool2 => boolean into STACK(1) environment
+*** Get i from STACK(1) environment <= integer
+*** Get bool1 from STACK(1) environment <= boolean
+*** Get i from STACK(1) environment <= integer
+*** end compilation

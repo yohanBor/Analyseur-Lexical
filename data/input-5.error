@@ -1,0 +1,3 @@
+return T : integer
+return T : float
+--- Erreur de typage Type error while checking StreeSWITCH

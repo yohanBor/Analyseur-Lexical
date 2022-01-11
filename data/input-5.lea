@@ -1,0 +1,49 @@
+	//fichier test_switch:
+		//- switch dans switch
+		//- 3 switchs imbriqués
+		//- un complexe (while) dans un switch
+
+
+class main {
+
+	private function succ(n: integer): integer {
+		return n+1;
+	}
+
+	private function test_print(str : string): float {
+		writeln(str);
+		return 0.0;
+	}
+
+
+	main(args: list<string>) {
+		i: integer;
+		j : float;
+		bool1 : boolean;
+		bool2 : boolean;
+		switch ( i ) {	
+			case 1 :  writeln( "2 ");
+			case 2 : writeln( "2" ) ;
+			case 3 : writeln( 3 ) ;
+			case 4 : 	switch ( "i" ) { 
+							case "1" :  writeln( "2 "); 
+							case "2" : while(bool1) {writeln("I'm an infinite loop");}
+							case "3" :	switch ( i ) { 
+											case 1 :  writeln( "2 "); 
+											case 2 : writeln( "2" ) ;
+											case 3 : writeln( 3 ) ;
+											default : writeln( ">3" ) ;
+										}
+							default : writeln( ">3" ) ;
+						}
+			case 5 : writeln( "2" );
+			case 6 : writeln("je suis ton pere");
+			case 7 : writeln("je suis le case 7");
+			case 8 : writeln("je suis le case 8");
+			case 9 : writeln("je suis le case 9");
+			case 10 : writeln("je suis le case 10");
+			case 11 : writeln("je suis le case 11");
+			default : writeln( ">3" ) ;
+		}
+	}
+}

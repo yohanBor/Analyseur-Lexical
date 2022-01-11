@@ -1,0 +1,13 @@
+digraph Stree {
+Stm_3 [shape="ellipse", label="SEQ"];
+Stm_1 [shape="ellipse", label="EXPSTM"];
+Stm_2 [shape="ellipse", label="MOVE"];
+Exp_12 [shape="ellipse", label="MEM"];
+Exp_11 [shape="ellipse", label="NAME: returnValue"];
+Exp_12 -> Exp_11;
+Exp_10 [shape="ellipse", label="0"];
+Stm_2 -> Exp_12;
+Stm_2 -> Exp_10;
+Stm_3 -> Stm_1;
+Stm_3 -> Stm_2;
+}

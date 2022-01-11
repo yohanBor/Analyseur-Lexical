@@ -1,0 +1,37 @@
+package fr.ubordeaux.deptinfo.compilation.lea.stree;
+
+import fr.ubordeaux.deptinfo.compilation.lea.intermediate.BINOP;
+import fr.ubordeaux.deptinfo.compilation.lea.intermediate.Exp;
+import fr.ubordeaux.deptinfo.compilation.lea.type.*;
+
+public class StreeTIMES extends Stree {
+
+	private BINOP exp;
+
+	public StreeTIMES(Stree left, Stree right) throws StreeException, TypeException {
+		super(left, right);
+		this.exp = new BINOP(BINOP.Code.MUL, left.getExp(), right.getExp());
+	}
+
+	@Override
+	public Exp getExp(){
+		return exp;
+	}
+
+	@Override
+	public boolean checkType() throws StreeException {
+		Type typeLeft = getLeft().getType();
+		Type typeRight = getRight().getType();
+		type = typeLeft;
+		if ((typeLeft != null) && (typeRight != null) && (typeLeft.getTag().equals(Tag.INTEGER) || typeLeft.getTag().equals(Tag.FLOAT)))
+			return typeLeft.assertEqual(typeRight);
+		else
+			throw new StreeException("Type error while checking null types !");
+	}
+
+	@Override
+	public Type getType() throws StreeException {
+		return getLeft().getType();
+	}
+
+}

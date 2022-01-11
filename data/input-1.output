@@ -1,0 +1,13 @@
+*** begin compilation
+*** Push a new environment
+*** Put main => (args:list<string>) -> void into STACK(0) environment
+*** Push a new environment
+*** Put args => list<string> into STACK(1) environment
+*** Put i => integer into STACK(1) environment
+*** Put i => integer into STACK(1) environment
+*** Get i from STACK(1) environment <= integer
+*** Pop an environment
+SEQ [left=LABEL [label=Test_Case_1], right=SEQ [left=fr.ubordeaux.deptinfo.compilation.lea.intermediate.CJUMP@3c3d9b6b, right=SEQ [left=LABEL [label=Test_Case_2], right=SEQ [left=fr.ubordeaux.deptinfo.compilation.lea.intermediate.CJUMP@79d8407f, right=SEQ [left=LABEL [label=Test_Case_3], right=SEQ [left=fr.ubordeaux.deptinfo.compilation.lea.intermediate.CJUMP@5fbe4146, right=SEQ [left=LABEL [label=Case_1], right=SEQ [left=EXPSTM [exp=fr.ubordeaux.deptinfo.compilation.lea.intermediate.CALL@1e66f1f5], right=SEQ [left=fr.ubordeaux.deptinfo.compilation.lea.intermediate.JUMP@4e50c791, right=SEQ [left=LABEL [label=Case_2], right=SEQ [left=EXPSTM [exp=fr.ubordeaux.deptinfo.compilation.lea.intermediate.CALL@7530ad9c], right=SEQ [left=fr.ubordeaux.deptinfo.compilation.lea.intermediate.JUMP@58a9760d, right=SEQ [left=LABEL [label=Case_3], right=SEQ [left=EXPSTM [exp=fr.ubordeaux.deptinfo.compilation.lea.intermediate.CALL@71e9ddb4], right=SEQ [left=fr.ubordeaux.deptinfo.compilation.lea.intermediate.JUMP@394df057, right=SEQ [left=LABEL [label=Default], right=SEQ [left=EXPSTM [exp=fr.ubordeaux.deptinfo.compilation.lea.intermediate.CALL@4961f6af], right=LABEL [label=End]]]]]]]]]]]]]]]]]]
+*** Pop an environment
+*** Put main => main:(args:list<string>) -> void into CLASSE environment
+*** end compilation

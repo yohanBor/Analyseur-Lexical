@@ -1,0 +1,14 @@
+class main {
+
+
+	main(args: list<string>) {
+		i: integer;
+		i : integer ;
+		switch ( i ) {	
+			case 10 :  writeln( "2 ");
+			case 35 : writeln( "2" ) ;
+			case 5 : writeln( "2" ) ;
+			default : writeln( ">3" ) ;
+		}
+	}
+}

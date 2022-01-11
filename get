@@ -1,0 +1,3 @@
+digraph Stree {
+a_9 [shape="ellipse", label="StreeVARIABLE"];
+}
